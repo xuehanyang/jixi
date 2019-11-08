@@ -43,10 +43,6 @@
           <li><a href="#">耳钉</a></li>
           <li><a href="#">牙套</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" data-toggle="modal" data-target="#login">微信抖音同号，可去主页点击抖音号进行复制添加微信</a></li>
-          
-        </ul>
         
         
       </div><!-- /.navbar-collapse -->
@@ -62,8 +58,39 @@
       <div class="col-xs-12">
          
           
-          <img src="./img/yueduwx_2.png" alt=""class="img-responsive center-block">
-          <h4 class="text-center">GX13454933489</h4>
+          <img src="./img/yueduwx_2.jpg" alt=""class="img-responsive center-block">
+          
+          <!DOCTYPE html>    
+  <html lang="en">    
+  <head>    
+      <meta charset="UTF-8">    
+      <div class="container">
+      <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>   
+      <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>  
+    
+      <title>复制按钮</title>    
+  </head>    
+  <body> 
+      <div class="text-center ">
+          <div class="text-uppercase">
+              <a style="font-size:20px">
+    <span id="target"  >GX13454933489</span>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn">    
+      点击复制    
+  </button>    </a> </div></div>
+  </body>    
+  <script>    
+      $(document).ready(function(){       
+          var clipboard = new Clipboard('#copy_btn');    
+          clipboard.on('success', function(e) {    
+              alert("微信号复制成功",1500); 
+              window.location.href='weixin://';
+              e.clearSelection();    
+              console.log(e.clearSelection);    
+          });    
+      });
+  </script>     </div>   
+  </html>
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="media">
@@ -234,7 +261,7 @@
                 <h5 class="list-group-item-heading">9. 高性价比、完美售后</h5>
                 <p class="list-group-item-text">自主生产销售品牌，第一手出厂价，做到产品轻奢，价格平民。自己生产车间，无任何中间商差价服务，做到面对面解决售后问题，效率一流</p>
               </a>
-              <h2 class="text-center">联系咨询请加微信</h2><h4 class="text-center">诚招代理！</h4>
+              <h2 class="text-center">联系咨询请私信</h2><h4 class="text-center">诚招代理！</h4>
             </div>
           </div>
           
@@ -242,7 +269,7 @@
       </div>
 
       <div class="col-xs-12">
-        <p class="text-center"> <span class="glyphicon glyphicon-phone"></span>&nbsp;官方唯一授权微信号：GX13454933489 （微信抖音同号，可去主页点击抖音号进行复制添加微信）   &nbsp;&nbsp;&nbsp;&nbsp;诚招代理！</p>
+        <p class="text-center"> <span class="glyphicon glyphicon-phone"></span>&nbsp;官方唯一授权 V：GX13454933489    &nbsp;&nbsp;&nbsp;&nbsp;诚招代理！</p>
       </div>
     </div>
     <!-- 栅格系统结束 -->
